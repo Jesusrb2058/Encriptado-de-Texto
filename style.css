@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --color-principal: #0A3871;
+    --color-secundario: #FFFFFF;
+    --Color-terciario: #E5E5E5;
+    --Color-cuarto: #f3f5fc;
+
+    --Fuente-pincipal: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.Logo {
+    margin-top: 20px;
+}
+
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: var(--Color-cuarto);
+}
+
+.texto {
+    position: absolute;
+    width: 42%;
+    height: 60%;
+    left: 12%;
+    top: 15%;
+    border: none;
+    font-family: var(--Fuente-pincipal);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    background-color: var(--Color-cuarto);
+    resize: none;
+}
+
+.texto::placeholder {
+    color: var(--color-principal);
+}
+
+.texto:focus,
+.texto:active {
+    color: var(--color-principal);
+    font-family: var(--Fuente-pincipal);
+    border: none;
+    outline: none;
+}
+
+.terminos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 80%;
+}
+
+.terminos p {
+    font-family: var(--Fuente-pincipal);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #a30303ef;
+    opacity: 0.8;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1% 0;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 82%;
+}
+
+/* Estilos compartidos para ambos botones */
+.btn-encriptar,
+.btn-desencriptar {
+    font-family: var(--Fuente-pincipal); /* La misma fuente para ambos botones */
+    font-size: 18px; /* El mismo tamaño de fuente */
+    line-height: 19px; /* La misma altura de línea */
+    text-align: center; /* Alineación de texto en el centro */
+}
+
+/* Estilos específicos para .btn-encriptar */
+.btn-encriptar {
+    display: flex; /* Asegura que el botón tenga un contenedor flex */
+    flex-direction: row; /* Organiza los elementos en una fila */
+    align-items: center; /* Centra los elementos verticalmente */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    padding: 2%; /* Espacio de relleno alrededor del contenido */
+    gap: 20px; /* Espacio entre los elementos hijos */
+    width: 250px; /* Ancho del botón */
+    background-color: var(--color-principal); /* Color de fondo del botón */
+    border: none; /* Sin borde */
+    border-radius: 24px; /* Esquinas redondeadas */
+    color: var(--color-secundario); /* Color del texto */
+    margin-right: 20px; /* Margen derecho para separación */
+}
+
+/* Estilos específicos para .btn-desencriptar */
+.btn-desencriptar {
+    display: flex; /* Asegura que el botón tenga un contenedor flex */
+    flex-direction: row; /* Organiza los elementos en una fila */
+    align-items: center; /* Centra los elementos verticalmente */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    padding: 2%; /* Espacio de relleno alrededor del contenido */
+    gap: 20px; /* Espacio entre los elementos hijos */
+    width: 250px; /* Ancho del botón */
+    background-color: transparent; /* Fondo transparente para igualar la apariencia */
+    border: 1px solid var(--color-principal); /* Borde de 1 píxel sólido */
+    border-radius: 24px; /* Esquinas redondeadas */
+    color: var(--color-principal); /* Color del texto */
+}
+
+
+.encriptado {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 30%;
+    height: 90%;
+    left: 60%;
+    top: 5%;
+    background: var(--color-secundario);
+    box-shadow: 0px 24px 32px -8px #0a387131;
+    border-radius: 32px;
+}
+
+.mensaje-encriptado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    gap: 16px;
+    position: absolute;
+    width: 100%;
+    top: 65%;
+    text-align: center;
+}
+
+.mensaje-encriptado h2 {
+    width: 60%;
+    font-family: var(--Fuente-pincipal);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: black;
+}
+
+.mensaje-encriptado p {
+    width: 80%;
+    font-family: var(--Fuente-pincipal);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: black;
+}
+
+.encriptado img {
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    top: 15%;
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texto {
+        font-size: 16px;
+        width: 70%;
+        height: 60%;
+        left: 10%;
+        top: 8%;
+    }
+
+    .terminos {
+        width: 80%;
+        left: 10%;
+        top: 87%;
+    }
+
+    .terminos p {
+        font-size: 12px;
+    }
+
+    .botones {
+        width: 80%;
+        left: 10%;
+        top: 90%;
+    }
+
+    .btn-encriptar,
+    .btn-desencriptar {
+        width: 48%;
+        border-radius: 16px;
+    }
+
+    .btn-encriptar:hover,
+    .btn-desencriptar:hover {
+        margin: 0.3%;
+        width: 47.5%;
+        padding: 1.8%;
+    }
+
+    .encriptado {
+        width: 80%;
+        height: 30%;
+        left: 10%;
+        top: 55%; /* Ajusta este valor para bajar el recuadro */
+        margin-bottom: 10px; /* Añadir margen inferior para separación */
+    }
+
+    .mensaje-encriptado {
+        width: 100%;
+        top: 50%; /* Ajusta este valor para mover el mensaje */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .mensaje-encriptado h2 {
+        width: 98%;
+    }
+
+    .mensaje-encriptado p{
+        width: 98%;
+        display: none;
+    }
+    .encriptado img {
+        top: 7%; /* Ajusta este valor para bajar las imágenes dentro del recuadro */
+        display: block;
+        visibility: visible;
+    }
+
+    /* Clases específicas para un texto e imagen ajustados dinámicamente */
+    .js-adjusted-text {
+        font-size: 1rem; 
+        text-align: center;
+        margin-top: 15%;
+        /* Ajusta el tamaño del texto aquí */
+    }
+
+    .js-adjusted-img {
+        width: 50%; /* Ajusta el tamaño de la imagen aquí */
+        height: auto;
+    }
+}

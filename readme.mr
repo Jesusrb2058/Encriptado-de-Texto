@@ -1,0 +1,76 @@
+# Encriptador de Texto
+
+## Descripción
+
+El Encriptador de Texto es una aplicación web que permite a los usuarios encriptar y desencriptar texto utilizando un mapeo específico para cada letra y número. La aplicación presenta una interfaz sencilla y amigable, con un área de texto para la entrada, botones para encriptar y desencriptar, y un área para mostrar el mensaje resultante.
+
+## Características
+
+- **Interfaz fácil de usar**: Diseño simple y limpio, ideal para usuarios de todos los niveles.
+- **Encriptación personalizada**: Mapeo único para cada letra y número que garantiza una encriptación distintiva.
+- **Alertas intuitivas**: Notificaciones para guiar al usuario durante el proceso de encriptación y desencriptación.
+- **Responsive Design**: Adaptable a diferentes tamaños de pantalla, asegurando una experiencia óptima en dispositivos móviles y de escritorio.
+- **Seguridad básica**: Deshabilita el menú contextual y la selección de texto para prevenir el copiado directo del contenido.
+
+## Instalación
+
+Para utilizar el Encriptador de Texto, sigue estos pasos:
+
+1. **Clonar el repositorio**:
+    ```bash
+    git clone https://github.com/tu-usuario/encriptador-de-texto.git
+    ```
+
+2. **Navegar al directorio del proyecto**:
+    ```bash
+    cd encriptador-de-texto
+    ```
+
+3. **Abrir el archivo `index.html` en tu navegador preferido**:
+    ```bash
+    open index.html
+    ```
+
+## Usos
+
+1. **Ingresar texto**:
+    - Escribe o pega el texto que deseas encriptar en el área de texto.
+    - **Nota**: No ingresar acentuaciones.
+
+2. **Encriptar texto**:
+    - Haz clic en el botón "Encriptar" para transformar el texto según el mapeo específico.
+
+3. **Desencriptar texto**:
+    - Haz clic en el botón "Desencriptar" para revertir el texto encriptado a su forma original.
+
+4. **Mensajes de salida**:
+    - Si el proceso es exitoso, se mostrará un mensaje indicando que el texto ha sido encriptado o desencriptado correctamente.
+    - Si no se ingresa texto, se mostrará un aviso solicitando la entrada de texto.
+
+## Contribución
+
+Si deseas contribuir a este proyecto, por favor sigue estos pasos:
+
+1. **Hacer un fork del repositorio**.
+2. **Crear una nueva rama**:
+    ```bash
+    git checkout -b nombre-de-tu-rama
+    ```
+3. **Realizar tus cambios y hacer commit**:
+    ```bash
+    git commit -m "Descripción de los cambios"
+    ```
+4. **Enviar tus cambios al repositorio remoto**:
+    ```bash
+    git push origin nombre-de-tu-rama
+    ```
+5. **Crear un Pull Request** en GitHub.
+
+## Explicación
+
+En este proyecto no se incluye un historial ni un botón para copiar el texto encriptado o desencriptado. A mi parecer, esto representa un riesgo de seguridad, ya que el texto debe ser encriptado y no dejar ningún residuo de lo que fue encriptado o desencriptado. La ausencia de estas características asegura que no se guarden registros no deseados que podrían comprometer la seguridad de la información procesada.
+
+## Contacto
+
+Para preguntas o aclaraciones, por favor contacta a [chuchobernal20058@gmail.com](mailto:chuchobernal20058@gmail.com).
+
